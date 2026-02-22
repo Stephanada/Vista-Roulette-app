@@ -175,7 +175,8 @@ function selectStation(station) {
     if (station.town) {
         const displayBrand = station.display_brand || "MyTownNow";
         
-        els.mytownnowLink.textContent = displayBrand;
+        // Show town and province in text link
+        els.mytownnowLink.textContent = `${station.town}, ${station.prov}`;
         els.mytownnowLink.href = station.website || station.mytownnow_url || "https://vistaradio.ca";
         els.townLinkContainer.style.display = 'block';
         els.weatherTown.textContent = station.town;
