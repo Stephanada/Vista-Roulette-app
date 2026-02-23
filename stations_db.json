@@ -654,7 +654,7 @@
         "format": "Variety Hits",
         "website": "https://www.mybarrysbaynow.com",
         "logo_url": "https://www.mybarrysbaynow.com/wp-content/uploads/logo.png",
-        "stream_url": "https://vistaradio.streamb.live/SB00109",
+        "stream_url": "https://vistaradio.streamb.live/SB00109?args=web_01",
         "display_brand": "MyBarrysBayNow"
     },
     {
@@ -762,7 +762,7 @@
         "frequency": "105.7",
         "brand": "The Ranch",
         "town": "Vernon",
-        "prov": "ON",
+        "prov": "BC",
         "format": "Country",
         "website": "https://www.mynorthokanagannow.com",
         "logo_url": "https://www.mynorthokanagannow.com/wp-content/uploads/logo.png",
