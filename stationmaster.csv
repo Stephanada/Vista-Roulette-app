@@ -1,82 +1,70 @@
-Market,Call,Station Name/Dial,"Format (updated June 11, 2025)",Website 
-Vancouver Island Group,,,,
-Courtenay (Comox Valley),CFCP,98.9 Jet FM,Classic Rock,https://www.mycomoxvalleynow.com/
-Campbell River,CIQC,99.7 The River,HOT AC,https://www.mycampbellrivernow.com/
-Port Hardy (Tri-port),CFNI,1240 Coast AM,Classic Hits,https://www.mytriportnow.com/
-Powell River,CFPW,95.7 Coast FM,Classic Hits,https://www.mypowellrivernow.com/
-Nanaimo/Sechelt,CKAY,91.7 Icon Radio,Classic Hits,https://www.mycoastnow.com/
-Duncan (Cowichan Valley),CJSU,89.7 Sun FM,Variety Hits,https://www.mycowichanvalleynow.com/
-Kootenay ,,,,
-Castlegar ,CKQR,99.3 The Goat,Rock,https://www.mykootenaynow.com/
-Nelson,CHNV,103.5 The Bridge ,Alternative Rock,https://www.mynelsonnow.com/
-Grand Forks,CKGF,102.3 Juice FM,Variety Hits,https://www.mygrandforksnow.com/
-Cranbrook,CFSM,107.5 2Day FM,Hot AC,https://www.myeastkootenaynow.com/
-Creston,CKCV,94.1 Juice FM,Variety Hits,https://www.mycrestonnow.com/
-BC North ,,,,
-Prince George ,CIRX,94.3 The Goat,Rock,https://www.myprincegeorgenow.com/
-Prince George ,CJCI,Country 97 FM,Country,https://www.myprincegeorgenow.com/
-Vanderhoof (Nechako Valley),CIRX-1/ CIVH,95.9 The Goat,Rock,https://www.mynechakovalleynow.com/
-Williams Lake ,CFFM/CKWL,The Goat / Cariboo Country,Rock/Country,https://www.mycariboonow.com/
-100 Mile House,CKBX,Country 840 / The Goat,Country/Rock,https://www.mycariboonow.com/
-Quesnel,CKCQ,The Goat / Cariboo Country,Rock/Country,https://www.mycariboonow.com/
-Smithers (Bulkley Lakes),CFBV,The  Moose,Variety Hits/Classic Hits,https://www.mybulkleylakesnow.com/
-AB/NWT,,,,
-Lethbridge ,CJOC,94.1 CJOC,Classic Hits,https://www.mylethbridgenow.com/
-Lethbridge ,CKBD,98.1 The Ranch,Country,https://www.mylethbridgenow.com/
-Grande Prairie,CFRI,104.7 The GOAT,Rock  ,https://www.mygrandeprairienow.com/
-Grande Prairie,CJGY,96.3 Sun FM,CHR,https://www.mygrandeprairienow.com/
-Lloydminster,CKLM,106.1 The Goat,Rock,https://www.mylloydminsternow.com/
-Lakeland (Bonnyville/Cold Lake),CFNA,99.7 The Ranch FM,Country,https://www.mylakelandnow.com/
-Yellowknife ,CJCD,100.1 Go FM,Hot AC,https://www.mynorthnow.com/
-Olds ,CKLJ,96.5 The Ranch - Olds,Country  ,https://www.mymountainviewnow.com/
-Olds ,CKJX,104.5 The GOAT,Rock,https://www.mymountainviewnow.com/
-Vegreville ,CKVG,106.5 The Ranch,Country,https://www.myvegrevillenow.com/
-ON North ,,,,
-Timmins,CHMT,93.1 Country FM,Country,https://www.mytimminsnow.com/
-Kapuskasing (Hearst),CKAP,94.5/100.9 Moose FM,Variety Hits/Classic Hits,https://www.mykaphearstnow.com/
-Cochrane,CHPB,98.1 Moose FM,Variety Hits/Classic Hits,https://www.mycochranenow.com/
-ON Mid-North,,,,
-North Bay ,CFXN,106.3 Jet FM,Classic Rock,https://www.mynorthbaynow.com/
-North Bay ,CFCH,90.5 Country,Country,https://www.mynorthbaynow.com/
-Elliot Lake ( Algoma-Manitoulin),CKNR,94.1 Moose FM,Variety Hits/Classic Hits,https://www.myalgomamanitoulinnow.com/
-Sturgeon Falls (West Nipissing),CFSF,99.3 Moose FM,HOT AC,https://www.mywestnipissingnow.com/
-Espanola ,CJJM,99.3 Moose FM,Variety Hits/Classic Hits,https://www.myespanolanow.com/
-ON CC,,,,
-Bracebridge ,CFBG,99.5 Moose FM ,HOT AC,https://www.mymuskokanow.com/
-Huntsville,CFBK,105.5 Moose FM,Variety Hits,https://www.mymuskokanow.com/
-Parry Sound,CKLP,103.3 Moose FM,Variety Hits/Classic Hits,https://www.myparrysoundnow.com/
-Haliburton,CFZN,93.5 Moose FM,Variety Hits/Classic Hits,https://www.myhaliburtonnow.com/
-ON South ,,,,
-Stratford,CHGK,107.7 2Day FM,HOT AC,https://www.mystratfordnow.com/
-Stratford,CJCS,107.1 CJCS,Classic Hits,https://www.mystratfordnow.com/
-Bancroft,CHMS,97.7 Moose FM,Variety Hits/Classic Hits,https://www.mybancroftnow.com/
-Kemptville,CKVV,97.5 Moose FM,Variety Hits/Classic Hits,https://www.mykemptvillenow.com/
-Barry's Bay,CHBY,106.5 Moose FM,Variety Hits/Classic Hits,https://www.mybarrysbaynow.com/
-Prescott,CKPP,107.9 Moose FM,Variety Hits/Classic Hits,https://www.myprescottnow.com/
-BCI,,,,
-Kelowna,,,,
-Kelowna,CHSU,99.9 Sun FM,CHR,https://www.myktownnow.com
-Kelowna,CILK,101.5 GO FM,HOT AC,https://www.myktownnow.com
-Kelowna,CKFR,AM 1150,News Talk,https://www.am1150.ca/
-Okanagan North,,,,
-Golden,CKGR,106.3 Summit FM,Classic Hits,https://www.myrogerspassnow.com
-Salmon Arm,CKXR,91.5 Summit FM,Classic Hits,https://www.myshuswapnow.com
-Revelstoke,CKCR,106.1 Summit FM,Classic Hits,https://www.myrogerspassnow.com
-Vernon,CICF,105.7 The Ranch,Country,https://www.mynorthokanagannow.com
-Okanagan South,,,,
-Penticton,CJMG,97.1 GO FM,HOT AC,https://www.mypentictonnow.com
-Penticton,CKOR,800 Summit AM,Classic Hits,https://www.mypentictonnow.com
-Osoyoos,CJOR,1240 Summit AM,Classic Hits,https://www.myosoyoosnow.com
-Summerland,CHOR,98.5 Summit FM,Classic Hits,https://www.mysummerlandnow.com
-Nelson,CKKC,106.9 Summit FM,Classic Hits,https://www.mynelsonnow.com
-Trail,CJAT,95.7 Summit FM,Classic Hits,https://www.mykootenaynow.com
-Peace Region,,,,
-Fort St. John,CHRX,98.5 GO FM,HOT AC,https://www.mypeaceregionnow.com
-Fort St. John,CKNL,101.5 The GOAT,Rock,https://www.mypeaceregionnow.com
-Dawson Creek,CJDC,890 The Ranch,Country,https://www.mypeaceregionnow.com
-Fort Nelson,CKRX,102.3 Summit FM,Classic Hits,https://www.myfortnelsonnow.com
-BC Northwest,,,,
-Terrace,CFTK,590 Summit AM,Classic Hits,https://www.myterracenow.com
-Terrace,CJFW,103.1 The River,Country,https://www.myterracenow.com
-Prince Rupert,CHTK,99.1 Coast FM,Classic Hits,https://www.myprincerupertnow.com
-Kitimat,CKTK,97.7 Summit FM,Classic Hits,https://www.mykitimatnow.com
+Call Letters,Frequency,Station Name,Brand,Format,Town,Province,Website,Stream URL
+CFCP,98.9,98.9 Jet FM,Jet FM,Classic Rock,Courtenay,BC,https://www.mycomoxvalleynow.com,https://vistaradio.streamb.live/SB00079?args=web_01
+CIQC,9.77,99.7 The River,The River,Hot AC,Campbell River,BC,https://www.mycampbellrivernow.com,https://vistaradio.streamb.live/SB00078?args=web_01
+CFNI,1240,1240 Coast AM,Coast,Classic Hits,Port Hardy,BC,https://www.mytriportnow.com,https://vistaradio.streamb.live/SB00083?args=web_01
+CFPW,95.7,95.7 Coast FM,Coast,Classic Hits,Powell River,BC,https://www.mypowellrivernow.com,https://vistaradio.streamb.live/SB00082?args=web_01
+CKAY,91.7,91.7 Icon Radio,Icon Radio,Classic Hits,Nanaimo/Sechelt,BC,https://www.mycoastnow.com,https://vistaradio.streamb.live/SB00081?args=web_01
+CJSU,89.7,89.7 Sun FM,Sun FM,Variety Hits,Duncan,BC,https://www.mycowichanvalleynow.com,https://vistaradio.streamb.live/SB00080?args=web_01
+CKQR,99.3,99.3 The GOAT,The GOAT,Rock,Castlegar,BC,https://www.mykootenaynow.com,https://vistaradio.streamb.live/SB00085?args=web_01
+CHNV,103.5,103.5 The Bridge,The Bridge,Alternative Rock,Nelson,ON,https://www.mynelsonnow.com,https://vistaradio.streamb.live/SB00086?args=web_01
+CKGF,102.3,102.3 Juice FM,Juice FM,Variety Hits,Grand Forks,BC,https://www.mygrandforksnow.com,https://vistaradio.streamb.live/SB00084?args=web_01
+CFSM,107.5,107.5 2Day FM,2Day FM,Hot AC,Cranbrook,BC,https://www.myeastkootenaynow.com,https://vistaradio.streamb.live/SB00075?args=web_01
+CKCV,94.1,94.1 Juice FM,Juice FM,Variety Hits,Creston,ON,https://www.mycrestonnow.com,https://vistaradio.streamb.live/SB00087?args=web_01
+CIRX,94.3,94.3 The GOAT,The GOAT,Rock,Prince George,BC,https://www.myprincegeorgenow.com,https://vistaradio.streamb.live/SB00066?args=web_01
+CJCI,97,Country 97 FM,Country,Country,Prince George,BC,https://www.myprincegeorgenow.com,https://vistaradio.streamb.live/SB00040?args=web_01
+CIRX,95.9,95.9 The GOAT,The GOAT,Rock,Vanderhoof,BC,https://www.mynechakovalleynow.com,https://vistaradio.streamb.live/SB00066?args=web_01
+CIVH,95.9,95.9 The GOAT,The GOAT,Rock,Vanderhoof,BC,https://www.mynechakovalleynow.com,https://vistaradio.streamb.live/SB00076?args=web_01
+CFFM,97.5,The GOAT,The GOAT,Rock,Williams Lake,BC,https://www.mycariboonow.com,https://vistaradio.streamb.live/SB00074?args=web_01
+CKWL,570,Cariboo Country,Country,Country,Williams Lake,BC,https://www.mycariboonow.com,https://vistaradio.streamb.live/SB00071?args=web_01
+CKBX,840,Country 840,Country,Country,100 Mile House,BC,https://www.mycariboonow.com,https://vistaradio.streamb.live/SB00073?args=web_01
+CKCQ,100.3,Cariboo Country,Country,Country,Quesnel,BC,https://www.mycariboonow.com,https://vistaradio.streamb.live/SB00071?args=web_01
+CFBV,870,The  Moose,Moose FM,Variety Hits,Smithers,BC,https://www.mybulkleylakesnow.com,https://vistaradio.streamb.live/SB00077?args=web_01
+CJOC,94.1,94.1 CJOC,CJOC,Classic Hits,Lethbridge,AB,https://www.mylethbridgenow.com,https://vistaradio.streamb.live/SB00093?args=web_01
+CKBD,98.1,98.1 The Ranch,The Ranch,Country,Lethbridge,AB,https://www.mylethbridgenow.com,https://vistaradio.streamb.live/SB00094?args=web_01
+CFRI,104.7,104.7 The GOAT,The GOAT,Rock,Grande Prairie,AB,https://www.mygrandeprairienow.com,https://vistaradio.streamb.live/SB00091?args=web_01
+CJGY,96.3,96.3 Sun FM,Sun FM,Top 40,Grande Prairie,AB,https://www.mygrandeprairienow.com,https://vistaradio.streamb.live/SB00478?args=web_01
+CKLM,106.1,106.1 The GOAT,The GOAT,Rock,Lloydminster,AB,https://www.mylloydminsternow.com,https://vistaradio.streamb.live/SB00090?args=web_01
+CFNA,99.7,99.7 The Ranch FM,The Ranch,Country,Lakeland,AB,https://www.mylakelandnow.com,https://vistaradio.streamb.live/SB00089?args=web_01
+CJCD,100.1,100.1 Go FM,GO FM,Hot AC,Yellowknife,NT,https://www.mynorthnow.com,https://vistaradio.streamb.live/SB00088?args=web_01
+CKLJ,96.5,96.5 The Ranch - Olds,The Ranch,Country,Olds,AB,https://www.mymountainviewnow.com,https://vistaradio.streamb.live/SB00385?args=web_01
+CKJX,104.5,104.5 The GOAT,The GOAT,Rock,Olds,AB,https://www.mymountainviewnow.com,https://vistaradio.streamb.live/SB00386?args=web_01
+CKVG,106.5,106.5 The Ranch,The Ranch,Country,Vegreville,AB,https://www.myvegrevillenow.com,https://vistaradio.streamb.live/SB00384?args=web_01
+CHMT,93.1,93.1 Country FM,Country,Country,Timmins,ON,https://www.mytimminsnow.com,https://vistaradio.streamb.live/SB00105?args=web_01
+CKAP,94.5,94.5/100.9 Moose FM,Moose FM,Variety Hits,Kapuskasing,ON,https://www.mykaphearstnow.com,https://vistaradio.streamb.live/SB00104?args=web_01
+CHPB,98.1,98.1 Moose FM,Moose FM,Variety Hits,Cochrane,ON,https://www.mycochranenow.com,https://vistaradio.streamb.live/SB00103?args=web_01
+CFXN,106.3,106.3 Jet FM,Jet FM,Classic Rock,North Bay,ON,https://www.mynorthbaynow.com,https://vistaradio.streamb.live/SB00100?args=web_01
+CFCH,90.5,90.5 Country,Country,Country,North Bay,ON,https://www.mynorthbaynow.com,https://vistaradio.streamb.live/SB00101?args=web_01
+CKNR,94.1,94.1 Moose FM,Moose FM,Variety Hits,Elliot Lake,ON,https://www.myalgomamanitoulinnow.com,https://vistaradio.streamb.live/SB00098?args=web_01
+CFSF,99.3,99.3 Moose FM,Moose FM,Hot AC,Sturgeon Falls,ON,https://www.mywestnipissingnow.com,https://vistaradio.streamb.live/SB00102?args=web_01
+CJJM,99.3,99.3 Moose FM,Moose FM,Variety Hits,Espanola,ON,https://www.myespanolanow.com,https://vistaradio.streamb.live/SB00099?args=web_01
+CFBG,99.5,99.5 Moose FM,Moose FM,Hot AC,Bracebridge,ON,https://www.mymuskokanow.com,https://vistaradio.streamb.live/SB00115?args=web_01
+CFBK,105.5,105.5 Moose FM,Moose FM,Variety Hits,Huntsville,ON,https://www.mymuskokanow.com,https://vistaradio.streamb.live/SB00116?args=web_01
+CKLP,103.3,103.3 Moose FM,Moose FM,Variety Hits,Parry Sound,ON,https://www.myparrysoundnow.com,https://vistaradio.streamb.live/SB00114?args=web_01
+CFZN,93.5,93.5 Moose FM,Moose FM,Variety Hits,Haliburton,ON,https://www.myhaliburtonnow.com,https://vistaradio.streamb.live/SB00113?args=web_01
+CHGK,107.7,107.7 2Day FM,2Day FM,Hot AC,Stratford,ON,https://www.mystratfordnow.com,https://vistaradio.streamb.live/SB00106?args=web_01
+CJCS,107.1,107.1 CJCS,CJCS,Classic Hits,Stratford,ON,https://www.mystratfordnow.com,https://vistaradio.streamb.live/SB00107?args=web_01
+CHMS,97.7,97.7 Moose FM,Moose FM,Variety Hits,Bancroft,ON,https://www.mybancroftnow.com,https://vistaradio.streamb.live/SB00110?args=web_01
+CKVV,97.5,97.5 Moose FM,Moose FM,Variety Hits,Kemptville,ON,https://www.mykemptvillenow.com,https://vistaradio.streamb.live/SB00108?args=web_01
+CHBY,106.5,106.5 Moose FM,Moose FM,Variety Hits,Barry's Bay,BC,https://www.mybarrysbaynow.com,https://vistaradio.streamb.live/SB00109?args=web_01
+CKPP,107.9,107.9 Moose FM,Moose FM,Variety Hits,Prescott,ON,https://www.myprescottnow.com,https://vistaradio.streamb.live/SB0011?args=web_011
+CHSU,99.9,99.9 Sun FM,Sun FM,Top 40,Kelowna,BC,https://www.myktownnow.com,https://vistaradio.streamb.live/SB00397?args=web_01
+CILK,101.5,101.5 GO FM,GO FM,Hot AC,Kelowna,BC,https://www.myktownnow.com,https://vistaradio.streamb.live/SB00398?args=web_01
+CKFR,1150,AM 1150,AM 1150,News Talk,Kelowna,BC,https://www.am1150.ca,https://vistaradio.streamb.live/SB00399?args=web_01
+CKGR,106.3,106.3 Summit FM,Summit,Classic Hits,Golden,BC,https://www.myrogerspassnow.com,https://vistaradio.streamb.live/SB00390?args=web_01
+CKXR,91.5,91.5 Summit FM,Summit,Classic Hits,Salmon Arm,ON,https://www.myshuswapnow.com,https://vistaradio.streamb.live/SB00391?args=web_01
+CKCR,106.1,106.1 Summit FM,Summit,Classic Hits,Revelstoke,BC,https://www.myrogerspassnow.com,https://vistaradio.streamb.live/SB00392?args=web_01
+CICF,105.7,105.7 The Ranch,The Ranch,Country,Vernon,ON,https://www.mynorthokanagannow.com,https://vistaradio.streamb.live/SB00396?args=web_01
+CJMG,97.1,97.1 GO FM,GO FM,Hot AC,Penticton,ON,https://www.mysouthokanagannow.com,https://vistaradio.streamb.live/SB00393?args=web_01
+CKOR,800,800 Summit AM,Summit,Classic Hits,Penticton,ON,https://www.mysouthokanagannow.com,https://vistaradio.streamb.live/SB00394?args=web_01
+CJOR,1240,1240 Summit AM,Summit,Classic Hits,Osoyoos,BC,https://www.mysouthokanagannow.com,https://vistaradio.streamb.live/SB00395?args=web_01
+CHOR,98.5,98.5 Summit FM,Summit,Classic Hits,Summerland,BC,https://www.mysummerlandnow.com,https://vistaradio.streamb.live/SB00387?args=web_01
+CKKC,106.9,106.9 Summit FM,Summit,Classic Hits,Nelson,ON,https://www.mynelsonnow.com,https://vistaradio.streamb.live/SB00389?args=web_01
+CJAT,95.7,95.7 Summit FM,Summit,Classic Hits,Trail,BC,https://www.mykootenaynow.com,https://vistaradio.streamb.live/SB00388?args=web_01
+CHRX,98.5,98.5 GO FM,GO FM,Hot AC,Fort St. John,BC,https://www.mypeaceregionnow.com,https://vistaradio.streamb.live/SB00404?args=web_01
+CKNL,101.5,101.5 The GOAT,The GOAT,Rock,Fort St. John,BC,https://www.mypeaceregionnow.com,https://vistaradio.streamb.live/SB00405?args=web_01
+CJDC,890,890 The Ranch,The Ranch,Country,Dawson Creek,ON,https://www.mypeaceregionnow.com,https://vistaradio.streamb.live/SB00406?args=web_01
+CKRX,102.3,102.3 Summit FM,Summit,Classic Hits,Fort Nelson,ON,https://www.myfortnelsonnow.com,https://vistaradio.streamb.live/SB00407?args=web_01
+CFTK,590,590 Summit AM,Summit,Classic Hits,Terrace,BC,https://www.myterracenow.com,https://vistaradio.streamb.live/SB00400?args=web_01
+CJFW,103.1,103.1 The River,The River,Country,Terrace,BC,https://www.myterracenow.com,https://vistaradio.streamb.live/SB00401?args=web_01
+CHTK,99.1,99.1 Coast FM,Coast,Classic Hits,Prince Rupert,BC,https://www.myprincerupertnow.com,https://vistaradio.streamb.live/SB00402?args=web_01
+CKTK,97.7,97.7 Summit FM,Summit,Classic Hits,Kitimat,BC,https://www.mykitimatnow.com,https://vistaradio.streamb.live/SB00403?args=web_01

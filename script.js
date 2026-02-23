@@ -135,7 +135,7 @@ function selectStation(station) {
     if (!station) return;
     STATE.currentStationIndex = station; // This should probably be an index or the station object itself, not an index.
     els.stationName.textContent = station.name;
-    els.stationFormat.textContent = `${station.format} • ${station.slug.toUpperCase()}`;
+    els.stationFormat.textContent = `${station.format} • ${station.call_letters || station.slug.toUpperCase()}`;
 
     // Logo-First Strategy with Text Fallback
     const logoContainer = document.querySelector('.station-logo-container');

@@ -1,6 +1,13 @@
+#!/usr/bin/env python3
+"""
+Build stations_db.json from stationmaster.csv
+with proper unique station handling based on frequency + call letters
+"""
+
 import csv
 import json
 import os
+import re
 
 def get_prov(town):
     t = str(town).lower()
@@ -51,6 +58,7 @@ def format_display_brand(middle_part):
         'rogerspass': 'RogersPass',
         'shuswap': 'Shuswap',
         'northokanagan': 'NorthOkanagan',
+        'southokanagan': 'SouthOkanagan',
         'penticton': 'Penticton',
         'osoyoos': 'Osoyoos',
         'summerland': 'Summerland',
@@ -71,73 +79,103 @@ def format_display_brand(middle_part):
     
     return replacements.get(middle_part.lower(), middle_part.capitalize())
 
-def build_merged_db():
-    # 1. Load the working streams from the scraper output
-    stream_map = {}
-    if os.path.exists('raw_stations.json'):
-        with open('raw_stations.json', 'r', encoding='utf-8') as f:
-            raw_data = json.load(f)
-            for station in raw_data:
-                slug = station.get('slug', '').lower()
-                stream_map[slug] = station.get('stream_url', '')
+def extract_frequency(station_name):
+    """
+    Extract frequency from station name/dial.
+    Examples: '98.9 Jet FM' -> '989', '1240 Coast AM' -> '1240', '590 Summit AM' -> '590'
+    """
+    match = re.search(r'(\d+\.?\d*)', station_name)
+    if match:
+        freq = match.group(1).replace('.', '')
+        return freq
+    return None
 
+def build_merged_db():
     stations = []
+    seen_combinations = set()  # Track unique frequency+call combinations
+    warnings = []
     
-    # 2. Load the perfect metadata from your CSV
+    # Load the CSV (new structure)
     with open('stationmaster.csv', mode='r', encoding='utf-8-sig') as f:
         reader = csv.DictReader(f)
         reader.fieldnames = [name.strip() for name in reader.fieldnames if name]
         
         for row in reader:
-            call_raw = row.get('Call', '').strip()
-            if not call_raw: continue
+            # Read from new CSV structure
+            call_letters = row.get('Call Letters', '').strip()
+            if not call_letters: continue
             
-            market = row.get('Market', '').strip()
-            town = market.split('(')[0].strip()
-            format_val = row.get('Format (updated June 11, 2025)', '').strip()
+            frequency = row.get('Frequency', '').strip()
+            station_name = row.get('Station Name', '').strip()
+            brand = row.get('Brand', '').strip()
+            format_val = row.get('Format', '').strip()
+            town = row.get('Town', '').strip()
+            prov = row.get('Province', '').strip()
             website = row.get('Website', '').strip().rstrip('/')
+            stream_url = row.get('Stream URL', '').strip()
+            
             logo_url = f"{website}/wp-content/uploads/logo.png" if website else ""
             
             # Generate display_brand from website URL
             if website:
-                # Extract domain (e.g., 'mycomoxvalleynow' from 'https://www.mycomoxvalleynow.com/')
                 domain = website.replace('https://', '').replace('http://', '').replace('www.', '').split('/')[0].split('.')[0]
-                # If it's in my...now format, extract and format properly
                 if domain.startswith('my') and domain.endswith('now'):
-                    middle = domain[2:-3]  # Extract middle part (e.g., 'comoxvalley')
-                    # Use format_display_brand for proper capitalization
+                    middle = domain[2:-3]
                     display_brand = f"My{format_display_brand(middle)}Now"
                 else:
                     display_brand = f"My{town.replace(' ', '')}Now"
             else:
                 display_brand = f"My{town.replace(' ', '')}Now"
             
-            calls = call_raw.split('/')
-            for c in calls:
-                slug = c.split('-')[0].strip().lower()
-                if not slug: continue
+            # Use call sign as slug (lowercase)
+            slug = call_letters.lower()
+            
+            # Create unique identifier: frequency + call sign
+            unique_key = f"{frequency}:{slug}" if frequency else slug
+            
+            # Check for duplicates
+            if unique_key in seen_combinations:
+                warning = f"⚠️  Duplicate found - {unique_key} ({station_name} in {town})"
+                warnings.append(warning)
+                print(warning)
+                continue
                 
-                # Generate stream URL from call sign
-                # Vista Radio typically uses ice7.securenetsystems.net or radioplayer.vistaradio.ca
-                call_upper = slug.upper()
-                stream_url = f"https://ice7.securenetsystems.net/{call_upper}"
-                
-                stations.append({
-                    "name": row.get('Station Name/Dial', '').strip(),
-                    "slug": slug,
-                    "town": town,
-                    "prov": get_prov(market),
-                    "format": format_val,
-                    "website": website,
-                    "logo_url": logo_url,
-                    "stream_url": stream_url,
-                    "display_brand": display_brand
-                })
+            seen_combinations.add(unique_key)
+            
+            # Validate call letters
+            if not call_letters or len(call_letters) < 4:
+                warning = f"⚠️  Invalid call letters for {station_name} - {call_letters}"
+                warnings.append(warning)
+                print(warning)
+            
+            # Use stream URL from CSV if present, otherwise generate placeholder
+            if not stream_url:
+                stream_url = f"https://ice7.securenetsystems.net/{call_letters}"
+            
+            stations.append({
+                "name": station_name,
+                "slug": slug,
+                "call_letters": call_letters,
+                "frequency": frequency,
+                "brand": brand,
+                "town": town,
+                "prov": prov,
+                "format": format_val,
+                "website": website,
+                "logo_url": logo_url,
+                "stream_url": stream_url,
+                "display_brand": display_brand
+            })
 
+    # Save to JSON
     with open('stations_db.json', 'w', encoding='utf-8') as f:
         json.dump(stations, f, indent=4)
         
-    print(f"✅ Success! Merged data and saved {len(stations)} stations to stations_db.json.")
+    print(f"\n✅ Success! Merged data and saved {len(stations)} stations to stations_db.json.")
+    print(f"📊 Found {len(seen_combinations)} unique station combinations.")
+    
+    if warnings:
+        print(f"\n⚠️  {len(warnings)} warnings generated - please review above")
 
 if __name__ == "__main__":
     build_merged_db()
