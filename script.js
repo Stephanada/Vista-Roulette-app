@@ -10,6 +10,22 @@ const STATE = {
     }
 };
 
+// Trending glow colors (R, G, B values)
+const GLOW_COLORS = [
+    { name: 'Purple', rgb: [88, 28, 135] },      // Deep purple
+    { name: 'Blue', rgb: [37, 99, 235] },        // Vibrant blue
+    { name: 'Cyan', rgb: [6, 182, 212] },        // Electric cyan
+    { name: 'Green', rgb: [34, 197, 94] },       // Modern green
+    { name: 'Pink', rgb: [236, 72, 153] },       // Hot pink
+    { name: 'Orange', rgb: [249, 115, 22] },     // Warm orange
+    { name: 'Red', rgb: [239, 68, 68] },         // Bold red
+    { name: 'Violet', rgb: [139, 92, 246] },     // Soft violet
+    { name: 'Teal', rgb: [20, 184, 166] },       // Cool teal
+    { name: 'Amber', rgb: [245, 158, 11] }       // Golden amber
+];
+
+let currentGlowIndex = 0;
+
 const TIMEZONES = {
     'ON': 'America/Toronto',
     'AB': 'America/Edmonton',
@@ -62,6 +78,16 @@ window.handleLogoError = function(img) {
         fallbackDiv.style.display = 'flex';
     }
 };
+
+// Function to update glow color
+function updateGlowColor() {
+    currentGlowIndex = (currentGlowIndex + 1) % GLOW_COLORS.length;
+    const color = GLOW_COLORS[currentGlowIndex];
+    
+    document.documentElement.style.setProperty('--glow-color-r', color.rgb[0]);
+    document.documentElement.style.setProperty('--glow-color-g', color.rgb[1]);
+    document.documentElement.style.setProperty('--glow-color-b', color.rgb[2]);
+}
 
 // Initialization
 async function init() {
@@ -134,6 +160,10 @@ function setupEventListeners() {
 function selectStation(station) {
     if (!station) return;
     STATE.currentStationIndex = station; // This should probably be an index or the station object itself, not an index.
+    
+    // Change glow color
+    updateGlowColor();
+    
     els.stationName.textContent = station.name;
     els.stationFormat.textContent = `${station.format} • ${station.call_letters || station.slug.toUpperCase()}`;
 
