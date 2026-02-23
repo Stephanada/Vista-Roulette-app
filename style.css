@@ -38,8 +38,8 @@ body {
         radial-gradient(circle at bottom left, rgba(251, 188, 4, 0.1), transparent 300px);
     border-radius: 16px;
     box-shadow: 
-        0 0 80px 20px rgba(var(--glow-color-r), var(--glow-color-g), var(--glow-color-b), 0.4),
-        0 0 120px 40px rgba(var(--glow-color-r), var(--glow-color-g), var(--glow-color-b), 0.2),
+        0 0 40px 8px rgba(var(--glow-color-r), var(--glow-color-g), var(--glow-color-b), 0.3),
+        0 0 60px 12px rgba(var(--glow-color-r), var(--glow-color-g), var(--glow-color-b), 0.15),
         0 24px 48px rgba(0, 0, 0, 0.5), 
         inset 0 1px 1px rgba(255, 255, 255, 0.1);
     display: grid;
