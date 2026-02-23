@@ -2,6 +2,26 @@
 
 All notable changes to Vista Radio Roulette will be documented in this file.
 
+## [1.1.0] - 2026-02-22
+
+### ✨ Visual Enhancement Update
+
+#### New Features
+- 🎨 **Dynamic Glow Colors**: Container glow cycles through 10 trending colors with each station change
+  - Purple, Blue, Cyan, Green, Pink, Orange, Red, Violet, Teal, Amber
+  - Smooth 0.8s transitions between colors
+- 🌈 **Transparent Background**: App now inherits parent page background for seamless iframe embedding
+- 💎 **CSS Custom Properties**: Dynamic color system using CSS variables
+
+#### Bug Fixes
+- 🗺️ **Vernon Station Fix**: Corrected CICF Vernon from ON to BC
+
+#### Technical Changes
+- Implemented CSS custom property system for dynamic theming
+- Added `updateGlowColor()` function that cycles through color array
+- Enhanced visual feedback with smooth color transitions
+- Optimized for iframe/embed scenarios
+
 ## [1.0.0] - 2026-02-22
 
 ### 🎉 Initial Release - Full Production Ready
