@@ -210,7 +210,7 @@ function selectStation(station) {
         els.mytownnowLink.href = station.website || station.mytownnow_url || "https://vistaradio.ca";
         els.townLinkContainer.style.display = 'block';
         els.weatherTown.textContent = station.town;
-        fetchWeather(station.town);
+        fetchWeather(station.town, station.prov);
     } else {
         els.townLinkContainer.style.display = 'none';
         els.weatherTown.textContent = "--";
@@ -315,34 +315,36 @@ function updateTime() {
     }
 }
 
-async function fetchWeather(townName) {
+// wttr.in weatherCode -> emoji
+function weatherEmoji(code) {
+    const c = Number(code);
+    if (c === 113) return "☀️";
+    if (c === 116) return "⛅";
+    if (c === 119 || c === 122) return "☁️";
+    if ([143, 248, 260].includes(c)) return "🌫️";
+    if ([200, 386, 389, 392, 395].includes(c)) return "⛈️";
+    if ([179, 227, 230, 323, 326, 329, 332, 335, 338, 368, 371, 350, 374, 377].includes(c)) return "❄️";
+    if (c >= 176 && c <= 359) return "🌧️";
+    return "☁️";
+}
+
+async function fetchWeather(townName, prov) {
     if (!townName) return;
 
     // Clear out old while loading
     els.weatherTemp.textContent = "...";
-    els.weatherIcon.textContent = "☀️"; // default 
+    els.weatherIcon.textContent = "☀️"; // default
 
     try {
-        // wttr.in gives simple formats: %t = temp (e.g. +14°C), %c = condition icon
-        // We URI encode the town name for safe parameters
-        const url = `https://wttr.in/${encodeURIComponent(townName)}?format=%t+%c`;
-        const res = await fetch(url);
+        // wttr.in returns an HTML page to browsers for text formats, so use the JSON format
+        const place = [townName, prov, "Canada"].filter(Boolean).join(", ");
+        const res = await fetch(`https://wttr.in/${encodeURIComponent(place)}?format=j1`);
         if (!res.ok) throw new Error("Weather Error");
 
-        let text = await res.text();
-        text = text.trim();
-
-        // Expected " +14°C 🌤️ "
-        // Let's parse out the temp and the icon simply 
-        const parts = text.split(" ");
-        if (parts.length >= 2) {
-            let tempString = parts[0].replace("+", ""); // Remove + if present
-            let iconString = parts.slice(1).join(" ").trim();
-            els.weatherTemp.textContent = tempString;
-            els.weatherIcon.textContent = iconString || "☁️";
-        } else {
-            els.weatherTemp.textContent = text;
-        }
+        const data = await res.json();
+        const cur = data.current_condition[0];
+        els.weatherTemp.textContent = `${cur.temp_C}°C`;
+        els.weatherIcon.textContent = weatherEmoji(cur.weatherCode);
     } catch (e) {
         console.warn("Could not fetch weather data:", e);
         els.weatherTemp.textContent = "--°C";
